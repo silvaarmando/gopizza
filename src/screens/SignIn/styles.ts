@@ -13,7 +13,8 @@ export const Container = styled(LinearGradient).attrs((
       y: 1
     },
     end: {
-      
+      x: 0.5,
+      y: 0.5,
     }
   }
 ))`
