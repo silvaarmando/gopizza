@@ -1,9 +1,5 @@
 import React from 'react';
 
-import {
-  View
-} from 'react-native';
-
 import AppLoading from 'expo-app-loading';
 
 import {
@@ -15,8 +11,15 @@ import {
   DMSerifDisplay_400Regular,
 } from '@expo-google-fonts/dm-serif-display';
 
+import {
+  ThemeProvider
+} from 'styled-components/native';
+
 import theme from './src/theme';
-import { ThemeProvider } from 'styled-components/native';
+
+import {
+  SignIn
+} from '@src/screens/SignIn';
 
 export default function App() {
   const [ fontsLoaded ] = useFonts({
@@ -32,7 +35,7 @@ export default function App() {
     <ThemeProvider
       theme={theme}
     >
-
+      <SignIn />
     </ThemeProvider>
   );
 }
