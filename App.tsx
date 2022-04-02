@@ -16,10 +16,7 @@ import {
 } from 'styled-components/native';
 
 import theme from './src/theme';
-
-import {
-  SignIn
-} from '@src/screens/SignIn';
+import { SignIn } from '@src/screens/SignIn';
 
 export default function App() {
   const [ fontsLoaded ] = useFonts({
